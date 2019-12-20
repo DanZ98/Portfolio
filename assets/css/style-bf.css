@@ -1,0 +1,844 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Lato:300);
+@import url(https://fonts.googleapis.com/css?family=Lato:900);
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+body{
+      background: url(../../assets/images/bg.png) left top repeat #333;
+}
+
+p{
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 400;
+}
+
+/*       home page      */
+
+.title{
+    width: 100%;
+    height: 160px;
+    padding-top: 105px;
+    text-align: center;
+    background-color: white;
+}
+
+.header-text{
+    margin-left: 1vw;
+    font-size: 30px;
+    color: black;
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 300;
+    letter-spacing: 1.5vw;
+}
+
+@font-face{
+    font-family: ITCAvantGardeStd-XLt;
+    src: url(assets/fonts/ITCAvantGardeStd-XLt.otf)format('opentype');
+    src: local("ITCAvantGardeStd-XLt"), url(assets/fonts/ITCAvantGardeStd-XLt.otf) format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* navigation */
+
+.nav{
+    text-align: center;
+    display:block;
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+    background-color:black;
+}
+
+nav ul{
+    margin: 0 auto; /* 6vw */
+    padding-top: 3px;
+    display: table;
+}
+
+nav ul li{
+    position: relative;
+    float:left;
+    width: 14vw;
+    height: 49px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: .5vw;
+    line-height: 40px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    line-height: 45px;
+    display: block;
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 400;
+}
+
+.hamburger-hover:hover{
+    color:red;
+    z-index: 9;   
+}
+
+.gallery-link:hover{
+    border: solid 1px white;
+}
+
+.gallery-sublinks:hover{
+    border: solid 1px white;
+}
+
+.mobile-sublinks{
+    font-size: 8px;
+}
+
+a:hover{
+    cursor: pointer;
+    color:red;
+}
+
+nav ul li ul{
+    position: absolute;
+    margin: 0;
+    width: 5vw;
+    display: none;
+}
+
+nav ul li ul li a{
+    width: 14vw;
+    background-color: black;
+    padding-left: 5px;
+}
+
+nav ul li:hover ul{
+    display: block;
+}
+
+/* hamburger mobile navigation */
+
+.icon{
+    display: none;
+}
+
+.mobilenav li{
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 400;
+    z-index: 9;
+}
+
+/* main */
+
+#wrap{
+    margin: 110px auto 60px auto;
+}
+
+main{
+    background-color: white;
+}
+
+.cycle-slideshow{
+    z-index: 1;
+}
+
+.portfolio-link{
+    padding: 50px 0 42px 0;
+    text-decoration: none;
+    color: white;
+}
+
+#portfolio2-link{
+    margin: 0;
+    text-decoration: none;
+    color: white;
+}
+
+#portfolio2-link:hover{
+    color: red;
+}
+
+/*       gallery page      */
+
+nav ul li{
+    z-index: 9;
+}
+
+#main-gallery{
+    position: relative;
+}
+
+#prev{
+    position: absolute;
+    top: 25vw;
+    left: 30px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    background-image: url("../images/prev.png");
+}
+
+#next{
+    position: absolute;
+    top: 25vw;
+    right: 30px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    background-image: url("../images/next.png");
+}
+
+.coverimg {
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+    padding: 100px 0;
+}
+
+/*       packages page      */
+
+.info-wrapper{
+    margin: 30px auto 0 auto;
+    width: 1255px;
+    height: auto;
+}
+
+.main-package{
+    padding-top: 1px;
+}
+
+.info-box{
+    margin: 0 5px;
+    width: 300px;
+    display: inline-block;
+    padding: 29px;
+    background-color: #e9e9e9;
+}
+
+.info-box h1{
+    padding-top: 42px;
+}
+
+h1, h2, p, span{
+    text-align: center;
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 400;
+}
+
+h1{
+    font-weight: bolder;
+    font-size: 23px;
+}
+
+h2{
+    padding-bottom: 10px;
+}
+
+p{
+    font-size: 12px;
+    line-height: 18px;
+    padding-bottom: 20px;
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 400;
+}
+
+hr{
+    border: 1px solid gray;
+}
+
+.price-link{
+    font-size: 20px;
+    background-color: black;
+    width: 238px;
+    height: 50px;
+    padding: 20px 20px 37px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+a .price-link:hover{
+    color: red;
+}
+
+.additional-padding{
+    padding-top: 20px;
+}
+
+.zen-logo{
+    margin: 25px 0 35px 87px;
+}
+
+/*       contact page      */
+
+.contact-image{
+    float: left;
+    width: 70%;
+    height: auto;
+}
+
+@-moz-document url-prefix() {
+    .contact-image{
+    margin-bottom: -1px;
+    }
+}
+
+.contact-bgimage{
+    margin: 0 0 -3px 0;
+}
+
+#contact-section{
+    float: right;
+    background-color:red;
+    width: 30%;
+    height: 50vw;
+}
+
+.contact-align, span{
+    text-align: left;
+    color:white;
+    font-size: .75vw;
+    padding: 0 0 1vw 2vw;
+}
+
+.contact-header{
+    font-size: 1.5vw;
+    padding: 3vw 0 .4vw 2vw;
+}
+
+span:hover{
+    color:black;  
+}
+
+.contact-email, .contact-cell{
+   padding-top: 7vw; /* 2vw*/
+   font-size: 2vw;
+}
+
+.contact-email-info, .contact-cell-info{
+    font-size: 1.3vw;
+}
+
+/*
+.contact-cell{
+    padding-bottom: 0;
+}
+*/
+
+input{
+    margin: .5vw 0 1vw 2vw;
+    padding-left: 1vw;
+    width: 25.7vw;
+    height: 3vw;
+}
+
+textarea{
+    margin-left: 2vw;
+    padding: .9vw 0 0 1vw;
+    width: 25.7vw;
+    height: 8vw;
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 400;
+}
+
+@-moz-document url-prefix() {
+    textarea{
+   font-size: 11px;
+    }
+}
+
+.send_button{
+    width: 9vw;
+    height: 3vw;
+    background-color: black;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#contact-footer{
+    margin: 0px;
+    clear: both;
+}
+
+#errormsg{
+    color:red;
+}
+
+/*       faq page      */
+
+.faq-main{
+   
+    background-color: white;
+    height: auto;
+}
+
+#faq-content{
+    width: 45%;
+    float: left;
+    padding: 80px 60px 80px 120px;
+}
+
+.questions-header{
+    padding-bottom: 25px;
+    color: black !important;
+    font-size: 24px;
+}
+
+#faq-section{
+    width: 55%;
+    float: right;
+    padding: 126px 120px 80px 60px;
+    background-color: white;
+}
+
+.faq-info{
+    text-align: left;
+}
+
+h2.faq-info{
+    color:red;
+}
+
+.quick-text{
+    color: black !important;
+    font-weight: bolder;
+}
+
+.faq-ul{
+    margin-left: 20px;
+    list-style:inherit;
+    font-size: 12px;
+    font-family: sans-serif;
+    line-height: 16px;
+}
+
+.hire-text{
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+#faq-footer{
+    clear: both;
+}
+
+.bold{
+    font-weight: 900;
+    font-family: 'Lato', sans-serif !important;
+}
+
+/*       packages page      */
+
+#booknow-wrapper{
+    width: 1120px;
+    margin: 0 auto;
+    padding-left: 24px;
+}
+
+.booknow-padding{
+    margin-top: 55px !important;
+}
+    
+.booknow-container{
+    position: relative;
+    width: 38%;
+    float: left;
+}
+
+.book-image{
+    width: 400px;
+   margin-left: 33px;
+}
+
+.booknow-header{
+    color: red !important;
+    font-size: 28px;
+}
+
+.booknow-questions{
+    padding-bottom: 5px !important;
+}
+
+.booknow-align{
+    text-align: left;
+    line-height: 0px;
+    color: white;
+    padding-bottom: 15px;
+}
+
+.book-info{
+    position: absolute;
+    top: 128px;
+    left: 33px;
+    background-color: black;
+    height: 144px;
+    padding: 27px 19px 0 20px;
+    padding-right: 19px;
+    background-color:rgba(0,0,0,0.7);
+}
+
+.booknow-form{
+    position: relative;
+    width: 604px;
+    float: right;
+    margin: 0px 59px 0 0;
+    background-image: url("../images/booknow_pattern.png");
+    background-size: 100% 100%;
+    height: 272px;
+    padding-top: 19px;
+}
+
+.book-address{
+    padding: 0;
+}
+
+.address-text{
+    height: 120px;
+    width: 237px;
+    padding: 10px
+}
+
+.address-text2{
+    margin-left: 33px !important;
+    padding: 10px
+}
+
+.book-text{
+    font-size: 10px;
+}
+
+.book-input{
+    margin: 10px 0 2px 21px;
+    width: 303px;
+    height: 32px;
+}
+
+.book-positions{
+    position: absolute;
+    top: 29px;
+    left: 315px;
+}
+
+.book-button{
+    margin-left: 34px;
+    width: 170px;
+    height: 47px;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+.send_button:hover{
+    color: red;
+}
+
+.book-clear{
+    clear: both;
+    padding-bottom: 360px;
+    padding-top: 32px;
+}
+   
+#booknow-footer{
+    clear: both;
+}
+
+/* footer */
+
+footer{
+    background-color: black;
+    width:100%;
+    height:auto;
+    clear: both;
+}
+
+.footer-header{
+    margin-left: 1vw;
+    padding-top: 25px;
+    color:white;
+    text-align: center;
+    font-size: 35px;
+     font-family: 'Lato', sans-serif !important;
+    font-weight: 300;
+    letter-spacing: 1.5vw;
+}
+
+.footer-text{
+    margin-left: 1vw;
+    padding-top: 15px;
+    text-align: center;
+    color:red;
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 400;
+}
+
+/* responsive mobile */
+
+@media only screen and (max-width:1280px){
+.info-wrapper{
+    width: 625px;
+}
+    
+.info-margin{
+    margin-bottom: 35px;
+    }
+}
+
+@media only screen and (max-width:1122px){
+textarea{
+    height: 5vw;
+    }
+}
+
+@media only screen and (max-width:1116px){
+#booknow-wrapper{
+    width: 81vw;
+    margin: 0px auto;
+    padding: 0;
+}
+    
+.booknow-container{
+    float: none;
+}
+    
+.booknow-form{
+    margin: 20px 0;
+    float: none;
+    width: 81vw;
+    height: auto;
+}
+    
+form.booknow-form{
+    margin-bottom: 75px;
+}
+    
+.book-image{
+    margin: 0;
+    width: 81vw;
+}
+    
+.book-info{
+    position: inherit;
+    top: 0;
+    left: 0;
+    margin-top: -4px;
+    height: auto;
+    width: 81vw;
+    background-color: black;
+}
+    
+.book-positions{
+    position: inherit;
+    top: 1vw;
+    left: 2vw;
+}
+    
+.booknow-align{
+    text-align: center;
+    padding-top: .2vw;
+}
+    
+.book-input{
+    margin: 10px 2vw 12px 2vw;
+    width: 77vw;
+    height: 64px;
+}
+    
+.address-text{
+    width: 77vw;
+    margin: 0 !important;
+    padding-top: 55px;
+}
+    
+.book-button{
+    margin: 2vw 0 5vw 0;
+}
+}
+
+@media only screen and (max-width:1093px){
+
+nav ul li ul li a{
+    width: 155px;
+}
+}
+
+@media only screen and (max-width:828px){
+
+nav ul{
+    display: none;
+}
+    
+.icon{
+    display: block;
+}
+    
+.menui{
+    background-color: black;
+}
+.title, .footer-header{
+    font-size: 33px;
+}
+    
+.header-text, .footer-header{
+    letter-spacing: 0vw;
+}
+    
+.footer-text{
+    padding: 50px 40px;
+}
+}
+
+@media only screen and (max-width:765px){
+
+.contact-image, #contact-section{
+    float: none;
+    width: 100%;
+    height: auto;
+}
+    
+.contact-header{
+    text-align: center;
+    font-size: 20px !important;
+}
+    
+.contact-title{
+    font-size: 10px;
+}
+    
+.contact-align{
+    text-align: center;
+    font-size: 15px;
+}
+    
+.contact-cell-info{
+    padding-bottom: 20px;
+}
+    
+/*
+form{
+    text-align: center;
+    padding-bottom: 5vw
+}
+*/
+    
+span{
+    font-size: 10px;
+}
+    
+.span-align{
+    padding-top: 30px;
+    text-align: center;
+}
+    
+/*
+textarea{
+    padding-top: 3vw;
+}
+    
+input, textarea, .send_button{
+    margin: 3vw 0 1vw 0vw;
+    width: 80%;
+    height: 13vw;
+    text-align: center;
+}
+*/
+    
+#faq-content{
+    width: 100%;
+    float: initial;
+    padding: 80px 80px 0px 80px;
+}
+    
+#faq-section{
+    width: 100%;
+    float: initial;
+    padding: 0px 80px 80px 80px;
+}
+    
+.book-positions{
+    position: relative;
+    left: 0;
+}
+}
+
+@media only screen and (max-width:685px){
+
+.info-wrapper{
+    width: 310px;
+}
+}
+
+@media only screen and (max-width:650px){
+
+footer{
+    height:auto;
+}
+}
+
+@media only screen and (max-width:474px){
+
+.title{
+    padding: 50px 25px;
+}
+    
+.footer-header{
+    padding-top: 50px;
+}
+}
+
+@media only screen and (max-width:449px){
+
+.responsiveimg{
+    width: 100%;
+    height: auto;
+}
+}
+
+@media only screen and (max-width:300px){
+textarea{
+    padding: 1vw 0;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

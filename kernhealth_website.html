@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>KERN Health</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, user-scalable=1.0">
+    <link rel="shortcut icon" href="assets/images/KERN_logo_2.png" sizes="16x16"><!-- fav browser icon -->
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css?family=Rubik:400,500');
+        
+        /* css reset */
+        /* http://meyerweb.com/eric/tools/css/reset/v2.0 | 20110126 License: none (public domain) */
+
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        
+        /* end css resent */
+        
+        /* css clearfix */
+        
+        html{
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        *, *:before, *:after{
+          -webkit-box-sizing: inherit;
+          -moz-box-sizing: inherit;
+          box-sizing: inherit;
+        }
+
+        .clearfix:after{
+             visibility: hidden;
+             display: block;
+             font-size: 0;
+             content: " ";
+             clear: both;
+             height: 0;
+             }
+        .clearfix { display: inline-block; }
+        /* start commented backslash hack \*/
+        * html .clearfix { height: 1%; }
+        .clearfix { display: block; }
+        /* close commented backslash hack */
+   
+        /* end css clearfix */
+        
+        #wrapper header{
+            padding: 50px 0;
+            background-color: #fdb913;
+        }
+        
+        #wrapper main{
+            position: relative;
+            background-color: #ffffff;
+        }
+        
+        #wrapper header img{
+            max-width: 255px;
+            width: 100%;
+            margin: 0 auto;
+            display: block;
+            padding: 0 20px 30px 20px;
+        }
+        
+        #wrapper header h1{
+            margin: 0 auto;
+            max-width: 987px;
+            width: 100%;
+            padding: 0 20px;
+            text-align: center;
+            font-size: 40px;
+            color: #ffffff;
+            font-family: sans-serif;
+            font-weight: 100;
+            line-height: 47px;
+        }
+        
+        #wrapper main h4{
+            max-width: 200px;
+            margin: 0 auto 47px auto;
+            padding:50px 0 10px 0;
+            text-align: center;
+            font-size: 24px;
+            font-family: sans-serif;
+            border-bottom: 4px solid;
+            font-weight: 400;
+        }
+        
+        #wrapper main h2{
+            max-width: 1138px;
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;       
+            font-size: 49px;
+            color: #fdb913;
+            font-family: 'Rubik', sans-serif;
+            font-weight: 500;
+        }
+        
+        #wrapper main h3{
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 5px;
+            font-size: 40px;
+            font-family: sans-serif;
+        }
+        
+        #wrapper main #contact-section{
+            margin: 0 auto;
+            position: relative;
+            max-width: 835px;
+            width: 100%;
+        }
+        
+        .form{
+            max-width: 75% !important;
+            margin: 41px auto 0 auto !important;
+        }
+        
+        #row1{
+            background: initial;   
+        }
+        
+        #wrapper main #ipad {
+            position: absolute;
+            top: 17px;
+            right: -100px;
+            max-width: 284px;
+            width: 100%;
+        }
+        
+        #wrapper main #button{
+            clear: both;
+            text-align: center;
+            padding: 105px 0 100px 0;
+        }
+        
+        #wrapper main button{
+            background-color: #fdb913;
+            border: none;
+            padding: 25px 35px;
+            color: #ffffff;
+            font-size: 20px;
+        }
+        
+         #wrapper main button:hover{
+            background-color: #000000;
+            color: #fdb913;
+            cursor: pointer;
+        }
+        
+        #wrapper footer{
+            margin-top: 100px;
+            height: 75px;
+            width: 100%;
+            background-color: #fdb913;
+        }
+        
+        @media only screen and (max-width:1054px){
+            #wrapper main #ipad {
+                position: inherit;
+                right: 0px;
+                left: 0px;
+                margin: 0 auto;
+                display: block;
+        }  
+            #wrapper main #button {
+                padding-top: 55px;
+        
+        }
+            
+            #wrapper footer{
+                margin-top: 0px;
+        }    
+        }
+        
+        @media only screen and (max-width:1020px){
+            #wrapper main #form{
+                float: none;
+                margin: 5.5em auto 0 auto;
+                padding: 0 20px;
+        }
+        }
+        
+</style>
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <a href="http://kern-health.com/" target="_blank"><img src="assets/images/Kern_Health_logo.png" alt="KERN HEALTH AN OMNICOM AGENCY" height="auto" /></a>
+        <h1>THE RIGHT MEDICARE MARKETING PARTNER CAN BOOST YOUR 2018 AEP RESULTS.</h1>
+    </header> 
+    <main>
+        <h4>GET THE GUIDE</h4>
+        <h2>5 KEY FACTORS TO FINDING</h2>
+        <h3>THE RIGHT MEDICARE MARKETING AGENCY</h3>
+        <div id="contact-section">
+            <img id="ipad" src="assets/images/KERN_Health_Ipad.png" height="auto" />
+        </div>
+        <div id="button">
+            <a href="http://kern-health.com/" target="_blank"><button>CLICK FOR INSTANT ACCESS</button></a>
+        </div>
+    </main><!-- end main -->
+    <footer>
+    </footer><!-- end footer -->
+</div><!-- end wrapper -->
+</body>
+</html>

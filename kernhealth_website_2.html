@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>KERN Health</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, user-scalable=1.0">
+    <link rel="shortcut icon" href="assets/images/KERN_logo_2.png" sizes="16x16"><!-- fav browser icon -->
+    <style>
+   
+        @import url('https://fonts.googleapis.com/css?family=Rubik:400,500');
+        
+        /* css reset */
+        /* http://meyerweb.com/eric/tools/css/reset/v2.0 | 20110126 License: none (public domain) */
+
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        
+        /* end css resent */
+        
+        /* css clearfix */
+        html{
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        *, *:before, *:after{
+          -webkit-box-sizing: inherit;
+          -moz-box-sizing: inherit;
+          box-sizing: inherit;
+        }
+
+        .clearfix:after{
+             visibility: hidden;
+             display: block;
+             font-size: 0;
+             content: " ";
+             clear: both;
+             height: 0;
+             }
+        .clearfix { display: inline-block; }
+        /* start commented backslash hack \*/
+        * html .clearfix { height: 1%; }
+        .clearfix { display: block; }
+        /* close commented backslash hack */
+		
+        /* end css clearfix */
+        
+		
+		/*mobile view resizing */
+		
+		.mobile-show{display:none;}
+		.mobile-hide{display:block;}
+		
+		/*mobile view resizing end */
+        
+        #wrapper{
+            position: relative;
+        }
+
+        #wrapper header{
+            padding: 50px 0 106px 0;
+            background-color: #fdb913;
+        }
+        
+        #wrapper main{
+            background-color: #ffffff;
+        }
+        
+        #wrapper #main-wrapper{
+            max-width: 1215px;
+            width: 100%;
+            margin: 0 auto;
+            padding-top: 46px;
+        }
+        
+        #wrapper section{
+            max-width: 1200px;
+            width: 90%;
+            margin: 0 auto;
+            clear: both;
+            padding-bottom: 70px;
+        }
+        
+        #wrapper header img{
+            margin: 0 auto;
+            position: absolute;
+            left: 0;
+            right: 0;
+        }
+        
+        #wrapper header h1{
+            margin: 86px auto 0 auto;
+            width: 90%;
+            padding: 0 20px;
+            text-align: center;
+            font-size: 60px;
+            color: #ffffff;
+            font-family: sans-serif;
+            font-weight: 100;
+            line-height: 65px;
+        }
+        
+        #wrapper header h2{
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+            color: #ffffff;
+            padding-top: 20px;
+            font-size: 26px;
+            font-family: sans-serif;
+            font-weight: 100;
+        }
+        
+         #wrapper #text-ipad-wrapper{
+                display: table;
+                margin: 0 auto 50px auto;
+            }
+        
+       #wrapper main #jumpstart-text{
+            max-width: 400px;
+            width: 100%;
+            float: left;
+        }
+        
+        #wrapper main #jumpstart-text h3{
+            font-size: 25px;
+            font-family: sans-serif;
+            padding-bottom: 30px;
+        }
+        
+        #wrapper main #jumpstart-text p{
+            padding-bottom: 30px;
+            font-family: sans-serif;
+            line-height: 23px;
+            font-size: 14px;
+        }
+        
+        #wrapper main #ipad{
+            position: relative;
+            bottom: 115px;
+            float: left;
+            margin-left: 68px;
+        }
+        
+        #wrapper main #ipad img{
+            max-width: 379px;
+            width: 90%;
+        }
+        
+        #wrapper main #form{
+            float: right;
+            text-align: right;
+        }
+        
+        #wrapper main #form img{
+            max-width: 330px;
+            width: 90%;
+        }
+        
+        #wrapper main #heres-text{
+            clear: both;
+        }
+        
+        #wrapper section #learn-container{
+            display: table;
+            width: 100%;
+        }
+        
+        #wrapper section .info-container{
+            display: inline-block;
+            width: 33%;
+            padding-right: 5%;
+            vertical-align: top;
+        }
+        
+        #wrapper section .info-container:nth-child(3){
+            padding-right: 0;
+        }
+        
+        #wrapper section .info-container p{
+            font-size: 16px;
+            font-family: sans-serif;
+            line-height: 20px;
+            font-weight: 100;
+        }
+        
+        #wrapper section h3{
+            font-size: 25px;
+            font-family: sans-serif;
+            padding-bottom: 25px;
+        }
+        
+        #wrapper section .number-logo{
+            float: left;
+            padding: 0 15px 50px 0;
+        }
+        
+        #wrapper section img:nth-child(3){
+             padding-bottom: 25px;
+         
+        }
+        
+        #wrapper footer{
+            background-color: #363636;
+            height: auto;
+        }
+        
+        #wrapper footer #footer-info{
+            max-width: 1200px;
+            width: 90%;
+            margin: 0 auto;
+            color: #ffffff;
+            padding: 50px 0;
+        }
+        
+        #wrapper footer #footer-info h4{
+            font-size: 30px;
+            font-family: sans-serif;
+            font-weight: 100;
+            padding-bottom: 20px;
+        }
+        
+        #wrapper footer #footer-info p{
+            font-size: 16px;
+            font-family: sans-serif;
+            line-height: 30px;
+            font-weight: 100;
+        }
+     
+        @media only screen and (max-width:1280px){
+           
+            
+			#wrapper header h1{
+                margin-top: 75px;
+				font-size:35px;
+				line-height:40px;
+			}
+            
+			#wrapper header h2{
+				font-size:22px;
+			}
+            
+            #wrapper main #jumpstart-text h3{
+                text-align: center;
+            }
+        
+            #wrapper main #ipad{
+                position: relative;
+                bottom: 0;
+                margin-left: 0;
+                text-align: center;
+            }
+            
+            #wrapper main #ipad img{
+                max-width: 326px;
+                width: 90%;
+            }
+            
+/*
+            #wrapper main #form{
+                width: 75%;
+                float: inherit;
+                text-align: center;
+                padding-bottom: 75px;
+				margin:0 auto 42px auto;
+            }
+*/
+            
+			.mobile-show{
+				display:block;
+			}
+            
+			.mobile-hide{
+				display:none;
+			}
+        }
+		@media(min-width:1000px) and (max-width:1047px){
+			#wrapper main #jumpstart-text{
+                margin:0 auto;
+			}
+			#wrapper header{
+				padding:50px 0 60px 0;
+			}
+			#wrapper section .number-logo{
+				padding:0 15px 24px 0;
+			}
+			#wrapper main #jumpstart-text{
+				max-width:500px; !important
+            }
+		}
+        
+        @media only screen and (max-width:1000px){
+            #wrapper section .info-container{
+                display: inline-table;
+                width: 100%;
+            }
+			#wrapper header{
+				padding:50px 0 60px 0;
+			}
+			#wrapper main #jumpstart-text{
+				max-width:500px; !important
+			}
+            #wrapper section h3 {
+                padding:0 0 30px 50px;
+            }
+
+            #wrapper main #jumpstart-text{
+                width: 90%;
+                float: left;
+                padding: 0 20px;
+            }
+            
+            #wrapper section .number-logo{
+				padding:0 15px 24px 0;
+			}
+            
+            #wrapper section .info-container:nth-child(3) {
+                padding-bottom: 20px;
+            }
+            
+            #wrapper section{
+                padding-bottom: 0;
+            }
+            
+            #wrapper .mobile-show #learn-container-1 p{
+                padding-top: 8px;
+            }
+            
+            
+        }
+		@media only screen and (max-width:900px){
+			#wrapper main #jumpstart-text{
+				max-width:400px;!important
+			}
+			
+			 #wrapper main #form{
+               margin:30px auto 42px auto;
+            }
+		}
+            
+         @media only screen and (max-width:725px){
+            #wrapper main #jumpstart-text {
+                max-width: 90%;
+                width: 90%;
+                float: inherit;
+                margin: 0 auto;
+             }
+             
+              #wrapper main #ipad{
+               margin: 0 auto;
+               width: 100%;
+            }
+        }
+        
+        
+         @media only screen and (max-width:560px){
+            #wrapper header h1{
+                font-size: 45px;
+                line-height: 45px;
+            }
+        }
+        
+        
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <a href="http://kern-health.com/" target="_blank"><img src="http://www2.kernagency.com/rs/273-QAC-361/images/Kern_Health_logo.png" alt="KERN HEALTH AN OMNICOM AGENCY" height="auto" /></a>
+        <h1>HIT YOUR MEDICARE MARKET GOALS FOR 2018 AEP.</h1>
+        <h2>Get the definitive guide to Digital Marketing for Medicare marketers.</h2>
+    </header> 
+    <main>
+       <div id="main-wrapper">
+            <div id="text-ipad-wrapper">
+                <div id="jumpstart-text">
+                    <h3>Jumpstart your digital marketing expertise</h3>
+                    <p>The Medicare audience has migrated over to the digital world. Will your health plan be there to engage them? Many Medicare marketers are struggling with digital marketing. There’s a lot to understand and new terminology to learn. The reality is this: if you don’t incorporate digital strategies into your AEP marketing plan, your membership goals are at risk.</p> 
+                    <p>KERN Health’s Medicare Marketing in Our Digital World is a comprehensive look at the latest digital tactics and terminology. We designed our eBook to bring you quickly up to speed so that you can capitalize on this knowledge in time for your next AEP.</p>
+                </div>
+                <div id="ipad">
+                    <a href="#form"><img src="http://www2.kernagency.com/rs/273-QAC-361/images/KERN_Health_Ipad.png" alt="KERN Health ipad" height="auto"/></a>
+                </div>
+            </div>
+            <section class="mobile-show">
+                <h3>Here's what you'll learn:</h3>
+                <div id="learn-container-1">
+                    <div class="info-container" id="heres-text-1">
+                        <img class="number-logo" src="http://www2.kernagency.com/rs/273-QAC-361/images/one.png" alt="one" height="auto" />
+                        <p>The latest digital marketing trends and how they work</p>
+                    </div>
+                    <div class="info-container">
+                        <img class="number-logo" src="http://www2.kernagency.com/rs/273-QAC-361/images/two.png" alt="two" height="auto" />
+                        <p>How to better segment, target and track your Medicare audience</p>
+                    </div>
+                    <div class="info-container">
+                        <img class="number-logo" src="http://www2.kernagency.com/rs/273-QAC-361/images/three.png" alt="three" height="auto" />
+                        <p>Proven techniques that will power up your marketing arsenal and can maximize your AEP success</p>
+                    </div>
+                </div>
+            </section>
+         
+        </div>
+    </main><!-- end main -->
+    <section class="mobile-hide">
+        <h3>Here's what you'll learn:</h3>
+        <div id="learn-container">
+                <div class="info-container" id="heres-text">
+                    <img class="number-logo" src="http://www2.kernagency.com/rs/273-QAC-361/images/one.png" alt="one" height="auto" />
+                    <p>The latest digital marketing trends and how they work</p>
+                </div>
+                <div class="info-container">
+                    <img class="number-logo" src="http://www2.kernagency.com/rs/273-QAC-361/images/two.png" alt="two" height="auto" />
+                    <p>How to better segment, target and track your Medicare audience</p>
+                </div>
+                <div class="info-container">
+                    <img class="number-logo" src="http://www2.kernagency.com/rs/273-QAC-361/images/three.png" alt="three" height="auto" />
+                    <p>Proven techniques that will power up your marketing arsenal and can maximize your AEP success</p>
+                </div>
+            </div>
+    </section>
+    <footer>
+        <div id="footer-info">
+            <h4>WHO IS THIS EBOOK FOR?</h4>
+            <p>Whether you’re marketing for Individual Medicare, Group, Age-In, or Dual Eligibles, more and more Medicare eligible prospects are online and mobile now. The insights within this eBook will help you reach your audience and target them more accurately and more personally than ever before.</p>
+        </div>  
+    </footer><!-- end footer -->
+</div><!-- end wrapper -->
+</body>
+</html>

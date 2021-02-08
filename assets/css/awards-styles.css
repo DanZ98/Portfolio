@@ -1,0 +1,147 @@
+#awards {
+    margin-top: 20px;
+    background-color: #f5f1f1;
+}
+
+#awards .awards-container {
+    margin: 0 auto;
+    max-width: 1420px;
+    width: 100%;
+    padding: 70px 20px 160px 20px;
+}
+
+#awards .awards-container h4 {
+    padding-top: 77px;
+    font-size: 77px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    color: #acafb1;
+}
+
+#awards .awards-container h4 span {
+    font-weight: 700;
+    color: #6c6d6e;
+}
+
+#awards .awards-container .awards-inner-container {
+    display: grid;
+    grid-template-areas: 
+    'awards-first awards-first awards-second awards-third'
+    'awards-fourth awards-fifth awards-fifth awards-sixth';
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+}
+
+#awards .awards-content-first, #awards .awards-content-second, #awards .awards-content-third, #awards .awards-content-fourth, #awards .awards-content-fifth, #awards .awards-content-sixth {
+    grid-area: awards-first;
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#awards .awards-content-first:before, #awards .awards-content-second:before, #awards .awards-content-third:before, #awards .awards-content-fourth:before, #awards .awards-content-fifth:before, #awards .awards-content-sixth:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+}
+
+#awards .awards-content-first h6, #awards .awards-content-second h6 , #awards .awards-content-third h6, #awards .awards-content-fourth h6, #awards .awards-content-fifth h6, #awards .awards-content-sixth h6 {
+    position: absolute;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2vw;
+    text-decoration: underline;
+}
+
+#awards .awards-content-second {
+    grid-area: awards-second;
+}
+
+#awards .awards-content-third {
+    grid-area: awards-third;
+}
+
+#awards .awards-content-fourth {
+    grid-area: awards-fourth;
+}
+
+#awards .awards-content-fifth {
+    grid-area: awards-fifth;
+}
+
+#awards .awards-content-sixth {
+    grid-area: awards-sixth;
+}
+
+#awards .awards-content-first, #awards .awards-content-second, .awards-content-third, .awards-content-fourth, .awards-content-fifth, .awards-content-sixth:hover {
+    cursor: pointer;
+}
+
+/* Text Hover Overlay Effect */
+
+#awards .awards-content-first, #awards .awards-content-second, #awards .awards-content-third, #awards .awards-content-fourth, #awards .awards-content-fifth, #awards .awards-content-sixth  {
+    position: relative;
+}
+
+#awards .awards-content-first .overlay, #awards .awards-content-second .overlay, #awards .awards-content-third .overlay, #awards .awards-content-fourth .overlay, #awards .awards-content-fifth .overlay, #awards .awards-content-sixth .overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(220, 9, 3, .8);; /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#awards .awards-content-first:hover .overlay, #awards .awards-content-second:hover .overlay, #awards .awards-content-third:hover .overlay, #awards .awards-content-fourth:hover .overlay, #awards .awards-content-fifth:hover .overlay, #awards .awards-content-sixth:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/*  end Text Hover Overlay Effect */
+
+/*
+#######################################################
+
+Mobile Section
+
+#######################################################
+*/
+
+@media only screen and (max-width: 765px) {
+
+    #awards .awards-container .awards-inner-container {
+        grid-template-areas: 
+        'awards-first'
+        'awards-second' 
+        'awards-third'
+        'awards-fourth' 
+        'awards-fifth' 
+        'awards-sixth';
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    #awards .awards-container .awards-inner-container img {
+        width: 100%;
+    }
+
+    #awards .awards-content-first h6, #awards .awards-content-second h6, #awards .awards-content-third h6, #awards .awards-content-fourth h6, #awards .awards-content-fifth h6, #awards .awards-content-sixth h6 {
+        font-size: 6vw;
+    }
+}

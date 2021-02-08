@@ -1,0 +1,114 @@
+/*
+#######################################################
+
+Article Section
+
+#######################################################
+*/
+
+article h1 {
+  color: red;
+  font-size: 30px;
+  line-height: normal;
+}
+
+article {
+  background: url(../images/events-background-image.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100vw;
+  height: auto;
+  background-attachment: inherit;
+}
+
+article .zins-events-container {
+  margin: 0 auto;
+  padding: 75px 20px 300px;
+  max-width: 1400px;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-areas: 
+  'events-content events-content'
+  'events-cities events-cities';
+  grid-gap: 40px 30px;
+}
+
+article .zins-events-content {
+  grid-area: 'events-content';
+  color: #fff;
+}
+
+article .zins-events-content:first-child h4 {
+  margin-bottom: 50px;
+  font-size: 77px;
+  text-transform: uppercase;
+}
+
+article .zins-events-content:first-child h4 span {
+  font-weight: bold;
+}
+
+article .zins-events-content p {
+  color: #fff;
+  line-height: 22px;
+}
+
+article .zins-events-content p:last-child {
+  margin-top: 30px;
+}
+
+article .zins-events-cities {
+  margin-top: 185px;
+  grid-area: 'events-cities';
+}
+
+article .zins-events-cities h4 {
+  font-size: 77px;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: normal;
+}
+
+article .zins-events-cities h4:nth-child(2) {
+  color: #a09d9d;
+}
+
+article .zins-events-cities h4:nth-child(3) {
+  color: #7e7c7c;
+}
+
+article .zins-events-cities h4:nth-child(4) {
+  color: #b8b4b4;
+}
+
+article .zins-events-cities h4:nth-child(5) {
+  color: #403f3f;
+}
+
+/*
+#######################################################
+
+Mobile Section
+
+#######################################################
+*/
+
+@media only screen and (max-width: 920px) {
+
+  article .zins-events-container {
+    grid-template:
+      'events-content' 1fr
+      'events-cities' 1fr / 1fr;
+    grid-column-gap: inherit;
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  article .zins-events-cities {
+    margin-top: 30px;
+  }
+}

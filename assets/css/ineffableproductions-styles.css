@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap');
+
+body{
+    font-family: "din", sans-serif;
+    color: #32A7DA;
+}
+
+/* Jumbotron Section */
+.jumbotron {
+    position: relative;
+    overflow: hidden;
+    background-color:black;
+    height: 700px;
+    padding: 0;
+    border-bottom: 3px solid #32A7DA;  
+}
+
+.jumbotron video {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    opacity:0.5;
+}
+
+.jumbotron .container{
+    position: relative;
+    max-width: 100%;
+}
+
+/* Navigation */
+nav{
+    background: rgba(0,0,0, 0.85);
+    border-bottom: 2px solid #32A7DA;
+}
+
+.nav-link{
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* Background Video */
+.video-texture{
+    background-image: url(../images/black-twill.png);
+}
+
+#video_background{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.angle-down{
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 32px;
+    font-size: 47px;
+    color: #e60f43;
+    z-index: 1;
+}
+
+h1{
+    font-family: 'Lato', sans-serif; 
+    font-weight: 900;
+    font-size: 50px;
+}
+
+p{
+    font-family: 'Lato', sans-serif; 
+    font-weight: 300; 
+    font-size: 20px;
+}
+
+.container-border{
+    border: 3px solid;
+    max-width: 100%;
+}
+
+.bg-image-work{
+    background-image: url('../images/test.png');
+    max-width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box-shadow img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.white-copy{
+    color: #ffffff;
+}
+
+.bg-image-directors{
+    background: url('../images/film_car.jpg');
+    max-width: 100%;
+    height: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Modal */
+.modal-backdrop.in {
+    filter: alpha(opacity=7);
+    opacity: 0.7;
+}
+ 
+.modal-content {
+    background: none;
+    border: 0;
+    -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;
+    -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
+}
+ 
+.modal-body {
+    padding: 0 25px 25px 25px;
+}
+ 
+.modal-header {
+    padding: 25px 25px 15px 25px;
+    text-align: right;
+}
+ 
+.modal-header, .modal-footer {
+    border: 0;
+}
+ 
+.modal-header .close {
+    float: none;
+    margin: 0;
+    font-size: 36px;
+    color: #fff;
+    font-weight: 300;
+    text-shadow: none;
+    opacity: 1;
+}
+
+.card{
+    background-color: inherit;
+    border: 1px solid white;
+}
+
+.card a{
+    cursor: pointer;
+}
+
+/* Contact Section */
+#contact-header, .contact-info{
+    color:#023C57;
+}
+
+/* Footer */
+footer{
+    background-color:#023C57; 
+    height: 180px;
+    width: 100%;
+    font-size: 12px;
+}
+
+.footer-border{
+    margin: 0;
+    border: 10px solid #033850;
+}
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+ 
+
+
+
+
